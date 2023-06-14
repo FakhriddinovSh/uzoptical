@@ -8,10 +8,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css" />
+    
+    <style>
+        swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+        }
+        
+        swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     
@@ -25,7 +47,7 @@
                         <button class="site-header__close"></button>
                         <ul class="site-header__list">
                             <li class="site-header__item">
-                                <a class="site-header__link" href="#galleria">
+                                <a class="site-header__link" href="#gallery">
                                     Gallery
                                 </a>
                             </li>
@@ -56,7 +78,10 @@
     
     
     <main class="site-main">
+        <!-- Hidden title for SEO -->
         <h1 class="visually-hidden">Uzoptical.uz Uzoptical (eurostyleoptical) eyeglasses</h1>
+        
+        <!-- Hero section started -->
         <section class="hero">
             <div class="container">
                 <div class="hero__wrapper">
@@ -68,10 +93,92 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="site-footer"></footer>
+        <!-- Hero section finished -->
+        
+        <!-- Gallery section started -->
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <h3 class="gallery__title">Gallery</h3>
+                
+                <ul class="row m-0 p-0 list-unstyled">
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/galleryOne.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/galleryTwo.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/galleryThree.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/galleryFour.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/galleryFive.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 mb-5 gallery__item">
+                        <img src="./images/gallerySix.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 gallery__item">
+                        <img src="./images/gallerySeven.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 gallery__item">
+                        <img src="./images/galleryEight.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                    <li class="col-12 col-md-6 col-xl-4 gallery__item">
+                        <img src="./images/galleryNine.png" width="317" height="317" alt="UZOPTICAL offical image">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Gallery section finished -->
+        
+        <!-- Article section started-->
+        <!-- <article class="article">
+            <img src="./images/girlOne.png" width="720" height="620" alt="Girl image with eyeglass">
+            <img src="./images/manOne.png" width="720" height="620" alt="Man image with eyeglass">
+        </article> -->
+        <!-- Article section finished-->
+        
+        <!-- New Arrivals -->
+        <section class="arrivals">
+            <h3 class="arrivals__title gallery__title">New Arrivals</h3>
+
+            <div class="container">
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+                slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-slide>
+                    <img src="./images/arrivalOne.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalTwo.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalThree.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalFour.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalFive.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalSix.png" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="./images/arrivalSeven.png" />
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <!-- New Arrivals -->
     
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+</main>
+<footer class="site-footer"></footer>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>

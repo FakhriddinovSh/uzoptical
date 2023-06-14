@@ -1,0 +1,36 @@
+.gallery{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gallery__title{
+    position: relative;
+    margin-bottom: 100px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.gallery__title::before{
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+    content: "";
+}
+
+.gallery__title::after{
+    display: block;
+    width: 40px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-bottom: 2px solid #000;
+    content: "";
+}
+.gallery__item img{
+    width: 100%;
+}
+

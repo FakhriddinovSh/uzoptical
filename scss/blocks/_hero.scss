@@ -96,3 +96,41 @@
         height: 410px;
     }
 }
+
+@media screen and (max-width: 521px){
+    .hero{
+        background-image: url("../../images/heroMobile.png");
+        background-repeat: no-repeat;
+        background-position-x: left;
+    }
+    .hero__content-wrapper{
+        padding-top: 158px;
+    }
+    
+    .hero__image{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 423px){
+    .hero{
+        background-image: url("../../images/heroMobile.png");
+        background-repeat: no-repeat;
+        background-position-x: calc(50% - 106px);
+        background-size: cover;
+    }
+    .hero__title{
+        font-size: 28px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .hero__content-wrapper{
+        padding-top: 180px;
+    }
+    .hero__title{
+        font-size: 22px;
+        line-height: 50px;
+    }
+}

@@ -38,10 +38,15 @@
 }
 
 .site-header__link{
+    padding-bottom: 20px;
     color: #000;
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
+}
+
+.site-header__link:hover{
+    border-bottom: 1px solid #000;
 }
 
 .site-header__call{
