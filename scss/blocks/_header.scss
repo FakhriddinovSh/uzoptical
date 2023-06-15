@@ -7,6 +7,7 @@
     box-shadow: 0 0 5px #000;
 }
 
+
 .site-header__logo-piece{
     color: #5F9BCE;
 }
@@ -32,6 +33,7 @@
 
 .site-header__logo{
     font-family: 'Fira Code', monospace;
+    font-weight: 600;
     font-size: 25px;
     color: #000;
     text-decoration: none;
@@ -123,7 +125,7 @@
     }
     
     .site-header{
-        padding: 26px 0;
+        padding: 15px 0;
     }
 
     .site-header__item{

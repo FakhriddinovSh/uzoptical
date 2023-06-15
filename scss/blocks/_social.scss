@@ -1,0 +1,13 @@
+.social__list{
+    position: fixed;
+    z-index: 2;
+    top: 30%;
+    left: 5%;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    background-color: #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+    border: 1px solid #00000073;
+}
